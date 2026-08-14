@@ -100,10 +100,14 @@ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 1.5rem;
 }
 
-.gallery img {
+.gallery img,
+.gallery video {
 width: 100%;
 border-radius: 12px;
 box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+background: #1e2937;
+display: block;
+object-fit: cover;
 }
 
 .btn {
@@ -192,11 +196,11 @@ Naszym celem jest dostarczanie rozwiązań, którym klienci mogą zaufać – op
 </div>
 <div class="service-card">
 <h3>WAŁY KORBOWE</h3>
-<p>Szlifowanie, Polerowanie, Prostowanie, Wyważanie, Pasowanie</p>
+<p>Szlifowanie, Polerowanie, Prostowanie, Pasowanie</p>
 </div>
 <div class="service-card">
 <h3>BLOK SILNIKA</h3>
-<p>Pomiary, Szczelność, Tulejowanie, Honing cylindrów, Planowanie, Osiowanie</p>
+<p>Pomiary, Szczelność, Tulejowanie, Szlif, Honing cylindrów, Planowanie, Osiowanie</p>
 </div>
 </div>
 </section>
@@ -204,7 +208,33 @@ Naszym celem jest dostarczanie rozwiązań, którym klienci mogą zaufać – op
 <section class="section" id="realizacje" style="background:#1e2937;">
 <h2 style="text-align:center; margin-bottom:2rem; color:white;">Realizacje</h2>
 <div class="gallery">
+
+<!-- Zdjęcie 1 -->
 <img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/main/90389CC0-298C-4048-AC8E-7A2D6B308938.PNG" alt="Realizacja 1">
+
+<!-- Film 1 + poster 1 -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/d83e1095c722035e934c87dd95ea675092ba11fa/IMG_3251.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/333a1c29ed88e5f5b95250e160e0067c5b87c740/IMG_3192%202.mp4" type="video/mp4">
+</video>
+
+<!-- Film 2 + poster 2 -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/17e7324fd7be63db54832fb892315f5f8485e127/IMG_3252.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/c729dfe440b5d34d2c999651c622226281046e08/IMG_3209.MOV" type="video/mp4">
+</video>
+
+<!-- Film 3 + poster 3 -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/0cb85ceb39afd71269f54dd78084e7ff3c5070ba/IMG_3253.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/82e6460a603e07f8749c936ea909790a54f468b5/IMG_3196%202.MOV" type="video/mp4">
+</video>
+
+<!-- Przywrócone zdjęcia -->
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/cc686e6f689e254ce5311d1980cbf5a3a79f6819/IMG_3160.HEIC" alt="Realizacja 2">
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/de0dd3b35a2c0575c65ddf4f7f8bad2361522580/IMG_3177.HEIC" alt="Realizacja 3">
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/557163d95036528315eea5c84c8ad20ad5d04b7c/IMG_2729.HEIC" alt="Realizacja 4">
+
 </div>
 </section>
 
@@ -224,8 +254,7 @@ Tel: <a href="tel:+48576776876" style="color:#c8102e;">+48 576 776 876</a>
 <h3 style="margin-bottom:1rem; color:white;">Nasz profil Google</h3>
 <p style="margin-bottom:1.5rem;">Zobacz opinie klientów i informacje o firmie</p>
 <a href="https://www.google.com/maps/search/?api=1&query=Engine+Szlif+Lubichowska+126+Starogard+Gda%C5%84ski"
-target="_blank"
-class="btn">
+target="_blank" class="btn">
 Otwórz profil w Google Maps
 </a>
 </div>
