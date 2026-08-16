@@ -3,34 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Szlifiernia Precyzyjna - Regeneracja Silników</title>
-<meta name="description" content="Profesjonalna szlifiernia silników. Obróbka głowic, bloków, wałów korbowych. Precyzyjna regeneracja silników spalinowych.">
+<title>Engine Szlif - Regeneracja silników Starogard Gdański</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 :root {
---primary: #1e3a8a;
---secondary: #334155;
+--primary: #c8102e;
+--dark: #0f172a;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
 font-family: 'Roboto', sans-serif;
+background: #0f172a;
+color: #e2e8f0;
 line-height: 1.6;
-color: #333;
 }
 
-header {
-background: linear-gradient(rgba(30, 58, 138, 0.95), rgba(30, 58, 138, 0.95)), url('https://via.placeholder.com/1920x600/1e3a8a/ffffff?text=Szlifiernia+Precyzyjna') center/cover no-repeat;
-color: white;
-padding: 3rem 1rem;
+.hero-text {
+background: #0f172a;
+padding: 3rem 1rem 2rem;
 text-align: center;
+color: white;
+}
+
+.hero-text h1 {
+font-size: 4.2rem;
+margin-bottom: 0.8rem;
+}
+
+.hero-text p {
+font-size: 1.5rem;
+max-width: 700px;
+margin: 0 auto;
+}
+
+.hero-image {
+width: 100%;
+height: auto;
+min-height: 500px;
+background: url('https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/main/FC4F1931-337E-45DF-86D2-A6F4187453B8.jpg') center center / contain no-repeat;
+background-color: #0f172a;
 }
 
 nav {
-background: white;
-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+background: rgba(15, 23, 42, 0.97);
+padding: 1rem 0.5rem;
 position: sticky;
 top: 0;
 z-index: 100;
@@ -40,78 +59,107 @@ nav ul {
 list-style: none;
 display: flex;
 justify-content: center;
-flex-wrap: wrap;
-padding: 1rem;
+flex-wrap: nowrap;
+overflow-x: auto;
+white-space: nowrap;
+gap: 1.8rem;
+padding: 0 1rem;
 }
 
-nav ul li { margin: 0 1rem; }
 nav ul li a {
+color: white;
 text-decoration: none;
-color: var(--primary);
 font-weight: 500;
+font-size: 1.05rem;
+transition: color 0.3s;
 }
+nav ul li a:hover { color: var(--primary); }
 
 .section {
-padding: 4rem 1rem;
+padding: 5rem 1rem;
 max-width: 1200px;
 margin: 0 auto;
 }
 
-.grid, .gallery {
+.services-grid {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 2rem;
-margin-top: 2rem;
 }
 
-.card {
-background: white;
-border-radius: 8px;
-overflow: hidden;
-box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.service-card {
+background: #1e2937;
+padding: 2rem;
+border-radius: 12px;
+text-align: center;
 }
 
-.card img {
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 1.5rem;
+}
+
+.gallery img,
+.gallery video {
 width: 100%;
-height: 220px;
+border-radius: 12px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+background: #1e2937;
+display: block;
 object-fit: cover;
 }
 
-.gallery img {
-width: 100%;
-border-radius: 8px;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
 .btn {
-display: inline-block;
 background: var(--primary);
 color: white;
-padding: 12px 30px;
-border-radius: 5px;
+padding: 14px 36px;
+border-radius: 6px;
 text-decoration: none;
-margin-top: 1rem;
-font-weight: 500;
+font-weight: 600;
+display: inline-block;
+transition: all 0.3s;
+}
+
+.btn:hover {
+background: #a00d24;
+transform: translateY(-2px);
+}
+
+.google-profile {
+background: #1e2937;
+padding: 2rem;
+border-radius: 12px;
+text-align: center;
+margin-bottom: 3rem;
+max-width: 700px;
+margin-left: auto;
+margin-right: auto;
 }
 
 footer {
-background: var(--secondary);
-color: white;
-text-align: center;
+background: #020617;
 padding: 3rem 1rem;
+text-align: center;
+color: #94a3b8;
 }
 
 @media (max-width: 768px) {
-nav ul { flex-direction: column; text-align: center; }
+.hero-text h1 { font-size: 2.6rem; }
+.hero-text p { font-size: 1.15rem; }
+.hero-image { min-height: 300px; }
+nav ul { gap: 1.2rem; }
+nav ul li a { font-size: 0.95rem; }
 }
 </style>
 </head>
 <body>
-<header>
-<h1>Szlifiernia Precyzyjna</h1>
-<p>Profesjonalna regeneracja silników spalinowych</p>
-<a href="#kontakt" class="btn">Zamów regenerację →</a>
-</header>
+<div class="hero-text">
+<h1>ENGINE SZLIF</h1>
+<p>Kompleksowa regeneracja silników spalinowych<br>Starogard Gdański</p>
+</div>
+
+<div class="hero-image"></div>
 
 <nav>
 <ul>
@@ -122,110 +170,122 @@ nav ul { flex-direction: column; text-align: center; }
 </ul>
 </nav>
 
-<section class="section" id="o-nas">
-<h2 style="text-align:center; margin-bottom:1.5rem;">O Nas</h2>
-<p style="max-width:800px; margin:0 auto 1.5rem; font-size:1.1rem; text-align:center;">
-Specjalizujemy się w precyzyjnej obróbce mechanicznej i regeneracji silników spalinowych.
-Posiadamy doświadczenie w pracy z głowicami, blokami silników oraz wałami korbowymi.
+<section class="section" id="o-nas" style="background:#1e2937;">
+<div style="max-width:900px; margin:0 auto; text-align:center; font-size:1.15rem;">
+<p style="font-size:1.4rem; font-weight:600; margin-bottom:1.5rem; color:#f8fafc;">
+Precyzja. Doświadczenie. Niezawodność.
 </p>
-</section>
-
-<section class="section" id="uslugi" style="background:#f8fafc;">
-<h2 style="text-align:center; margin-bottom:2rem;">Nasze Usługi</h2>
-<div class="grid">
-<div class="card">
-<img src="https://via.placeholder.com/600x400/1e40af/ffffff?text=Obr%C3%B3bka+G%C5%82owic" alt="Głowice">
-<div style="padding:1.5rem;">
-<h3>Obróbka głowic cylindrów</h3>
-<p>Szlifowanie, planowanie, regeneracja gniazd zaworowych i przewodników.</p>
-</div>
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/600x400/1e40af/ffffff?text=Bloki+Silnik%C3%B3w" alt="Bloki">
-<div style="padding:1.5rem;">
-<h3>Regeneracja bloków silników</h3>
-<p>Honing cylindrów, szlifowanie płaszczyzn, naprawa uszkodzeń.</p>
-</div>
-</div>
-<div class="card">
-<img src="https://via.placeholder.com/600x400/1e40af/ffffff?text=Wa%C5%82y+Korbowe" alt="Wały">
-<div style="padding:1.5rem;">
-<h3>Obróbka wałów korbowych</h3>
-<p>Szlifowanie, polerowanie, wyważanie dynamiczne.</p>
-</div>
-</div>
+<p style="margin-bottom:1.3rem;">
+Specjalizujemy się w obróbce mechanicznej komponentów silników spalinowych. Łączymy wieloletnie doświadczenie z nowoczesnym parkiem maszynowym i zaawansowanymi technologiami, zapewniając najwyższą jakość wykonania.
+</p>
+<p style="margin-bottom:1.3rem;">
+Realizujemy regenerację silników do samochodów osobowych i ciężarowych, maszyn rolniczych i budowlanych, jednostek pływających oraz silników przemysłowych. Każde zlecenie wykonujemy z najwyższą precyzją, dbając o trwałość, niezawodność i pełną sprawność każdej jednostki.
+</p>
+<p>
+Naszym celem jest dostarczanie rozwiązań, którym klienci mogą zaufać – opartych na jakości, technologii i doświadczeniu.
+</p>
 </div>
 </section>
 
-<section class="section" id="realizacje">
-<h2 style="text-align:center; margin-bottom:2rem;">Przykładowe Realizacje</h2>
+<section class="section" id="uslugi">
+<h2 style="text-align:center; margin-bottom:3rem; color:white;">Nasze Usługi</h2>
+<div class="services-grid">
+<div class="service-card">
+<h3>GŁOWICE</h3>
+<p>Kompletna regeneracja</p>
+</div>
+<div class="service-card">
+<h3>WAŁY KORBOWE</h3>
+<p>Szlifowanie, Polerowanie, Prostowanie, Pasowanie</p>
+</div>
+<div class="service-card">
+<h3>BLOK SILNIKA</h3>
+<p>Pomiary, Szczelność, Tulejowanie, Szlif, Honing cylindrów, Planowanie, Osiowanie</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="realizacje" style="background:#1e2937;">
+<h2 style="text-align:center; margin-bottom:2rem; color:white;">Realizacje</h2>
 <div class="gallery">
-<!-- Tutaj wstaw swoje zdjęcia -->
-<img src="https://via.placeholder.com/600x400/334155/ffffff?text=Regeneracja+G%C5%82owicy" alt="Regeneracja głowicy">
-<img src="https://via.placeholder.com/600x400/334155/ffffff?text=Blok+Silnika" alt="Blok silnika">
-<img src="https://via.placeholder.com/600x400/334155/ffffff?text=Wa%C5%82+Korbowy" alt="Wał korbowy">
-<img src="https://via.placeholder.com/600x400/334155/ffffff?text=Gotowy+Silnik" alt="Gotowy silnik">
+
+<!-- Zdjęcie 1 -->
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/main/90389CC0-298C-4048-AC8E-7A2D6B308938.PNG" alt="Realizacja 1">
+
+<!-- Film 1 + poster 1 -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/d83e1095c722035e934c87dd95ea675092ba11fa/IMG_3251.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/333a1c29ed88e5f5b95250e160e0067c5b87c740/IMG_3192%202.mp4" type="video/mp4">
+</video>
+
+<!-- Film 2 + poster 2 -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/17e7324fd7be63db54832fb892315f5f8485e127/IMG_3252.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/c729dfe440b5d34d2c999651c622226281046e08/IMG_3209.MOV" type="video/mp4">
+</video>
+
+<!-- Film 3 + poster 3 -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/0cb85ceb39afd71269f54dd78084e7ff3c5070ba/IMG_3253.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/82e6460a603e07f8749c936ea909790a54f468b5/IMG_3196%202.MOV" type="video/mp4">
+</video>
+
+<!-- Film 4 + poster -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/9ad26e82a699c1039c9c78764d477b0b3b4a4490/IMG_3267.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/7d44bfa9489133221ac3bc3464eacb17730a5090/IMG_3217.mp4" type="video/mp4">
+</video>
+
+<!-- Zdjęcie HEIC -->
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/bc3dd947ae7db2678251feacf2eb1774b461b174/IMG_2444.HEIC" alt="Realizacja dodatkowa">
+
+<!-- Ostatni film + poster -->
+<video controls muted playsinline webkit-playsinline preload="metadata"
+poster="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/36c01edd481e83e02b0803f174d5d070b8f8a4dc/IMG_3268.jpg">
+<source src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/0fadbbae7f4986b58979087ab32d49e64aa81954/IMG_2853.mp4" type="video/mp4">
+</video>
+
+<!-- Nowe zdjęcie -->
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/6dbcd629c0053d3cdd357cfd4026324a1587c257/950D2B02-501E-419C-B2AB-C3BC62A120C4.jpg" alt="Realizacja nowa">
+
+<!-- Pozostałe zdjęcia -->
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/cc686e6f689e254ce5311d1980cbf5a3a79f6819/IMG_3160.HEIC" alt="Realizacja 2">
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/de0dd3b35a2c0575c65ddf4f7f8bad2361522580/IMG_3177.HEIC" alt="Realizacja 3">
+<img src="https://raw.githubusercontent.com/engineszlif-bot/ENGINE-SZLIF/557163d95036528315eea5c84c8ad20ad5d04b7c/IMG_2729.HEIC" alt="Realizacja 4">
+
 </div>
 </section>
 
-<section class="section" id="kontakt" style="background:#f1f5f9; padding: 4rem 1rem;">
-<h2 style="text-align:center; margin-bottom: 2rem;">Kontakt</h2>
-
-<div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-
-<!-- Dane kontaktowe -->
-<div>
-<h3>ENGINE SZLIF</h3>
-<p><strong>NIP:</strong> 5922225744</p>
-<p><strong>Adres:</strong><br>
-ul. Lubichowska 126<br>
-83-200 Starogard Gdański</p>
-<p><strong>Telefon:</strong> <a href="tel:+48576776876">+48 576 776 876</a></p>
-
-<h3 style="margin-top: 2rem;">Wyślij zapytanie</h3>
-<form action="https://formspree.io/f/TWOJ_KOD" method="POST" style="display: grid; gap: 1rem;">
-<input type="text" name="name" placeholder="Imię i nazwisko" required style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-<input type="tel" name="phone" placeholder="Telefon" required style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-<input type="email" name="email" placeholder="E-mail" style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-<textarea name="message" rows="5" placeholder="Opisz zlecenie (rodzaj silnika, zakres prac itp.)" required style="padding:12px; border:1px solid #ccc; border-radius:5px;"></textarea>
-<button type="submit" class="btn" style="cursor:pointer;">Wyślij wiadomość</button>
-</form>
+<section class="section" id="kontakt">
+<h2 style="text-align:center; margin-bottom:2rem; color:white;">Kontakt</h2>
+<div style="max-width:600px; margin:0 auto; text-align:center;">
+<p><strong>ENGINE SZLIF</strong></p>
+<p>NIP: 5922225744</p>
+<p>ul. Lubichowska 126<br>83-200 Starogard Gdański</p>
+<p style="font-size:1.4rem; margin:1.5rem 0;">
+Tel: <a href="tel:+48576776876" style="color:#c8102e;">+48 576 776 876</a>
+</p>
+<a href="tel:+48576776876" class="btn">Zadzwoń teraz</a>
 </div>
 
-<!-- Mapa Google -->
-<div>
-<h3>Jak do nas dojechać</h3>
-<iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2336.057!2d18.526!3d53.964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDU3JzN0LjAiTiAxOMKwMzEnMzQuMCJF!5e0!3m2!1spl!2spl!4v1720000000000"
-width="100%"
-height="400"
-style="border:0; border-radius:8px;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
+<div class="google-profile" style="margin-top:4rem;">
+<h3 style="margin-bottom:1rem; color:white;">Nasz profil Google</h3>
+<p style="margin-bottom:1.5rem;">Zobacz opinie klientów i informacje o firmie</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Engine+Szlif+Lubichowska+126+Starogard+Gda%C5%84ski"
+target="_blank" class="btn">
+Otwórz profil w Google Maps
+</a>
 </div>
-</div>
-</section>
-<h2 style="text-align:center; margin-bottom:2rem;">Kontakt i Zapytanie</h2>
-<div style="max-width:600px; margin:0 auto;">
-<form action="https://formspree.io/f/TWOJ_KOD" method="POST" style="display:grid; gap:1rem;">
-<input type="text" name="name" placeholder="Imię i nazwisko" required style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-<input type="tel" name="phone" placeholder="Telefon kontaktowy" required style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-<input type="email" name="email" placeholder="E-mail" style="padding:12px; border:1px solid #ccc; border-radius:5px;">
-<textarea name="message" rows="5" placeholder="Opisz zlecenie (np. rodzaj silnika, co wymaga regeneracji)" required style="padding:12px; border:1px solid #ccc; border-radius:5px;"></textarea>
-<button type="submit" class="btn" style="cursor:pointer;">Wyślij zapytanie</button>
-</form>
 
-<div style="margin-top:3rem; text-align:center; font-size:1.1rem;">
-<p><strong>Telefon:</strong> +48 ___ ___ ___</p>
-<p><strong>Email:</strong> kontakt@twojaszlifiernia.pl</p>
-<p><strong>Adres:</strong> ul. Twoja 123, Miasto</p>
-</div>
+<div style="margin-top:3rem;">
+<h3 style="text-align:center; color:white; margin-bottom:1rem;">Jak do nas dojechać</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2335.8!2d18.5265!3d53.9648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTPCsDU3JzUzLjMiTiAxOMKwMzEnMzUuNCJF!5e0!3m2!1spl!2spl!4v1721500000000"
+width="100%" height="450" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
 </div>
 </section>
 
 <footer>
-<p>&copy; 2026 Szlifiernia Precyzyjna • Regeneracja silników spalinowych</p>
+<p>&copy; 2026 Engine Szlif • Wszystkie prawa zastrzeżone</p>
 </footer>
 </body>
 </html>
